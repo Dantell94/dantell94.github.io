@@ -14,7 +14,7 @@ body{
 	padding-bottom: 75px;
 	padding-top: 30px;
 	background-color: #FAF9F5;
-	width: 900px;
+	width: 63%;
 	margin: auto;
 	
 }
@@ -46,7 +46,7 @@ body{
 
 .about{
 	margin: auto;
-	width: 900px;
+	width: 63%;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	text-align: center;
@@ -64,7 +64,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	padding: 10px;
-	width: 500px;
+	width: 55%;
 	margin: auto;
 }
 
@@ -72,10 +72,11 @@ body{
 
 .services {
 	margin: auto;
-	width: 900px;
+	width: 63%;
 	padding-top:40px;
 	text-align: center;
 	background-color: #FAF9F5;
+	padding-bottom: 10px;
 }
 
 
@@ -87,59 +88,82 @@ body{
 	
 }
 
-.services h5{
-	font-family: 'Pacifico', cursive;
-	font-size: 1em;
-	padding: 0; margin: 0;
-	padding-bottom: 15px;
-}
-
 .services p{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.1em;
+	padding: 15px;
 }
 
 #custom{
 	font-size: .75em;
 	font-family: 'Roboto', sans-serif;
+	vertical-align: middle;
 	
 }
 
-/* Services Lists */
+/* SERVICES LIST */
 
-.column{
-	float: left;
-	width: 33.33%;
+* {
+    box-sizing: border-box;
 }
 
-.column h4{
+/* three columns of equal width */
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+	border-radius: 20px;
+}
+
+/* Pricing header */
+.price .header {
+    background-color:#F3ACB2;
+    color: white;
+    font-size: 25px;
 	font-family: 'Pacifico', cursive;
-	font-size: 1.5em;
-	padding: 0;
-	margin:0;
-	padding-top: 20px;
+	border-radius: 10px;
+}
+
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+	font-family: 'Roboto', sans-serif;
 	
 }
+
+
+.price .cost {
+    background-color:;
+    font-size: 20px;
+	font-family: 'Roboto', sans-serif; 
+}
+
+
 
 
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-/* Services Text Groups */
-
-#A{
-	color: crimson;
-}
-
-#B{
-	color: blueviolet
-}
-
-#C{
-	color: darkblue
+	
+	
+	
 }
 
 /* CONTACT */
@@ -147,9 +171,9 @@ body{
 .contact{
 	text-align: center;
 	background-color: #FAF9F5;
-	width: 900px;
+	width: 63%;
 	margin: auto;
-	padding-top: 40px;
+	padding-top: 10px;
 }
 
 .contact h2{
@@ -167,16 +191,16 @@ select, input{
 	border-radius: 4px;
 	border: 1px solid #ccc;
 	height: 30px;
-
+	
 	
 }
 textarea{
 	border-radius: 4px;
 	border: 1px solid #ccc;
     height: 150px;
-	width: 300px;
-	
+	width: 35%;
 }
+	
 
 input[type=submit]{
 	background-color: white;
@@ -192,7 +216,7 @@ input[type=submit]:hover{
 
 footer{
 background-color: #FAF9F5;
-	width: 900px;
+	width: 63%;
 	text-align: center;
 	margin: auto;
 	padding-top: 40px;
@@ -200,9 +224,20 @@ background-color: #FAF9F5;
 
 footer h4{
 	font-family: 'Pacifico', cursive;
-	font-size: 1em;
+	font-size: 1.75em;
 }
 
+.social i{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 2.5em;
+	color:#F3ACB2;
+}
+
+.social i:hover{
+	color: #B75E64;
+	transition: .5s;
+}
 
 /* Responsive */
 
